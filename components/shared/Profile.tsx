@@ -1,6 +1,6 @@
 const Profile = () => {
   return (
-    <div className="bg-lightestTeal h-screen w-screen mx-auto max-w-7xl flex flex-col md:flex-row">
+    <div className="bg-lightestTeal h-screen w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl">
       <div className="flex flex-1 m-2 md:m-20 bg-lighterTeal flex-col order-2 md:order-1">
         <h1 className="uppercase text-3xl text-center text-white">
           About Dr Msutu
