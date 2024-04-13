@@ -1,11 +1,19 @@
-import { Approach, Profile, Services } from "@/components/shared";
+import { Approach, ContactMe, Profile, Services } from "@/components/shared";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2">
+    <main className="flex flex-col items-center justify-between">
       <Profile />
       <Services />
       <Approach />
+      <ContactMe
+        message={{
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        }}
+      />
     </main>
   );
 }

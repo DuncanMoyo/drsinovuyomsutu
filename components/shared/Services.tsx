@@ -8,7 +8,7 @@ import { servicesData } from "@/lib/constants";
 
 const Services = () => {
   return (
-    <div className="md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-5 rounded-2xl">
+    <div className="md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-5 rounded-2xl justify-center">
       <div className="border-solid border-darkerTeal mt-10 px-10 md:mx-96 border-2 rounded-lg text-center">
         <h1 className="text-base m-2 md:text-5xl uppercase">Services</h1>
       </div>
