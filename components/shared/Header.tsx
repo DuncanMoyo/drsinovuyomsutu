@@ -4,11 +4,11 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b bg-darkestTeal">
       <div className="max-w-7xl lg:mx-auto p-2 md:px-10 xl:px-0 w-full flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/assets/images/logo_black.png"
+            src="/assets/images/logo_white.png"
             alt="logo"
             width={50}
             height={50}

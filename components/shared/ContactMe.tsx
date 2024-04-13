@@ -80,11 +80,18 @@ const ContactMe = ({ message }: Props) => {
           Please be assured that your privacy will be rigorously upheld
           throughout your interactions with Dr. Sinovuyo Msutu.
         </p>
+        <p className="p-5">
+          Possible location for contact details for example google maps, office
+          hours and phone number
+        </p>
       </div>
       <div className="flex flex-col mx-auto items-center md:h-full justify-center  mt-5">
         <div className="pb-5">
           <Form {...form}>
-            <form className="w-[300px] md:w-[500px]" onSubmit={form.handleSubmit(onSubmit)}>
+            <form
+              className="w-[300px] md:w-[500px]"
+              onSubmit={form.handleSubmit(onSubmit)}
+            >
               <div className="flex-col md:flex md:flex-row">
                 <FormField
                   control={form.control}

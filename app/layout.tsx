@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/shared";
+import { Footer, Header } from "@/components/shared";
 
 const inter = Lato({
   weight: ["300", "400", "700", "900"],
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
