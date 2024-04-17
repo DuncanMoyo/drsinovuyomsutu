@@ -70,7 +70,7 @@ const ContactMe = ({ message }: Props) => {
   };
 
   return (
-    <div className="h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl bg-lightestTeal">
+    <div id="four" className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-16 bg-lightestTeal">
       <div className="flex flex-col w-80 p-3 md:h-full justify-center rounded-2xl md:bg-lighterTeal">
         <p className="md:pb-10 p-5">
           To inquire about our pricing details, we kindly ask you to reach out

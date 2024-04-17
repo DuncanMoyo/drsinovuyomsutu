@@ -1,6 +1,8 @@
+'use client'
+
 const Approach = () => {
   return (
-    <div className="bg-lightestTeal h-screen w-screen mx-auto mt-5 max-w-7xl flex flex-col rounded-2xl">
+    <div id="three" className="bg-lightestTeal h-screen w-screen mx-auto max-w-7xl flex flex-col rounded-2xl pt-16">
       <div className="border-solid mx-20 mb-5 md:mx-96 border-darkerTeal mt-10 border-2 rounded-lg text-center">
         <h1 className="text-base m-2 uppercase md:text-5xl">Consultations</h1>
       </div>

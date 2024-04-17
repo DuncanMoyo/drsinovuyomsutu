@@ -67,3 +67,22 @@ export const servicesData: {
     ],
   },
 ];
+
+export const navLinks: { name: string; url: string }[] = [
+  {
+    name: "one",
+    url: "#one",
+  },
+  {
+    name: "two",
+    url: "#two",
+  },
+  {
+    name: "three",
+    url: "#three",
+  },
+  {
+    name: "four",
+    url: "#four",
+  },
+];
