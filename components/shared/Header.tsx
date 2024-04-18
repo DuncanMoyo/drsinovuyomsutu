@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { navLinks } from "@/lib/constants";
 import Image from "next/image";
@@ -8,8 +8,37 @@ import Icon from "../ui/Icon";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [navVisible, setNavVisible] = useState(true);
+
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollTop = window.pageYOffset;
+
+      if (currentScrollTop > lastScrollTop) {
+        // scrolled down
+        setNavVisible(false);
+      } else {
+        // scrolled up
+        setNavVisible(true);
+      }
+      setLastScrollTop(currentScrollTop);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollTop]);
+
   return (
-    <header className="w-full border-b bg-darkestTeal md:fixed">
+    <header
+      className={`w-full border-b bg-darkestTeal md:fixed ${
+        navVisible ? "visible" : "hidden"
+      }`}
+      style={{
+        transition: "opacity 0.3s ease",
+        opacity: navVisible ? 1 : 0,
+      }}
+    >
       <div className="max-w-7xl lg:mx-auto p-2 md:px-10 xl:px-0 w-full items-center justify-between md:justify-around hidden md:flex">
         <AnchorLink href="#home">
           <Image
