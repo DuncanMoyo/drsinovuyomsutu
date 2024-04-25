@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full border-b bg-darkestTeal md:fixed ${
+      className={`w-full z-50 border-b bg-darkestTeal md:fixed ${
         navVisible ? "visible" : "hidden"
       }`}
       style={{

@@ -20,21 +20,3 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #e0f2f1; 
 }
-
-/* Target the div with the specific class */
-.profile::-webkit-scrollbar {
-  width: 8px; /* Adjust this value to make the scrollbar thinner */
-}
-
-.profile::-webkit-scrollbar-track {
-  background: #e0f2f1; /* lightestTeal */
-}
-
-.profile::-webkit-scrollbar-thumb {
-  background-color: #4db6ac; /* darkTeal */
-  border-radius: 20px;
-  border: 3px solid #e0f2f1; /* lightestTeal */
-}
-.profile::-webkit-scrollbar-button {
-  scrollbar-color: #000000;
-}

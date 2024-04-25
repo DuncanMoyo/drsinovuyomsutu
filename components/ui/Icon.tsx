@@ -3,8 +3,9 @@
 import { FC } from "react";
 import { IconContext } from "react-icons";
 import { MdMenu, MdOutlineClose } from "react-icons/md";
+import { FaLocationArrow } from "react-icons/fa";
 
-export const iconNames = ["menu", "close"] as const;
+export const iconNames = ["menu", "close", "location"] as const;
 
 export type IconName = (typeof iconNames)[number];
 
@@ -29,6 +30,8 @@ const selectIcon = (
       return <MdMenu />;
     case "close":
       return <MdOutlineClose />;
+    case "location":
+      return <FaLocationArrow />;
     default:
       return <></>;
   }

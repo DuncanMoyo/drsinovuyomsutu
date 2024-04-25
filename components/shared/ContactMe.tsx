@@ -17,6 +17,8 @@ import {
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
+import Icon from "../ui/Icon";
+import Link from "next/link";
 
 type Props = {
   message: {
@@ -70,20 +72,42 @@ const ContactMe = ({ message }: Props) => {
   };
 
   return (
-    <div id="four" className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightestTeal">
+    <div
+      id="four"
+      className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightestTeal"
+    >
       <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-lighterTeal">
-        <p className="font-light md:pb-10 p-5">
-          To inquire about our pricing details, we kindly ask you to reach out
-          to our office directly
-        </p>
-        <p className="font-light p-5">
-          Please be assured that your privacy will be rigorously upheld
-          throughout your interactions with Dr. Sinovuyo Msutu.
-        </p>
-        <p className="font-light p-5">
-          Possible location for contact details for example google maps, office
-          hours and phone number
-        </p>
+        <div className="flex flex-col md:pb-10 p-5">
+          <a className="font-light" href="tel:0710093161">
+            Call: 071 009 3161
+          </a>
+          <a href="mailto:drmsutupsych@gmail.com" className="font-light mt-1">
+            Email: drmsutupsych@gmail.com
+          </a>
+        </div>
+        <div className="md:pb-10 p-5">
+          <p className="font-light">Claro Clinic</p>
+          <p className="font-light">Syfred Douglas Street </p>
+          <p className="font-light">N1 City </p>
+          <p className="font-light">Cape Town </p>
+          <p className="font-light">7463 </p>
+        </div>
+
+        <div className="md:pb-10 p-5">
+          <p className="">Working Hours possibly here</p>
+        </div>
+
+        <div className="md:pb-10 p-5">
+          <a
+            href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-fit items-center cursor-pointer"
+          >
+            <p className="mr-3">Proceed to map</p>
+            <Icon name="location" />
+          </a>
+        </div>
       </div>
       <div className="flex flex-col mx-auto items-center md:h-full justify-center  mt-5">
         <div className="pb-5">
