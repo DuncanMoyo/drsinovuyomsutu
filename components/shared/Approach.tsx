@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const Approach = () => {
   return (
     <div
@@ -11,7 +13,12 @@ const Approach = () => {
       </div>
       <div className="flex flex-col md:flex-row w-full h-screen">
         <div className="flex flex-1 bg-lightTeal justify-center text-white text-5xl m-2 text-center items-center">
-          Consultation Image
+        <Image
+          src="/assets/images/consultation.jpg"
+          alt="profile"
+          width={440}
+          height={700}
+        />
         </div>
         <div className="flex flex-1 m-2 p-2 md:m-20 bg-lighterTeal flex-col">
           <h1 className="uppercase text-3xl text-center">

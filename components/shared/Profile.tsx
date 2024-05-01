@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const Profile = () => {
   return (
     <div
@@ -34,7 +36,12 @@ const Profile = () => {
         </p>
       </div>
       <div className="flex flex-1 bg-lightTeal justify-center text-white text-6xl m-2 text-center items-center order-1 md:order-2">
-        Image of Dr Sinovuyo
+        <Image
+          src="/assets/images/sinovuyo_grad.jpeg"
+          alt="profile"
+          width={440}
+          height={700}
+        />
       </div>
     </div>
   );

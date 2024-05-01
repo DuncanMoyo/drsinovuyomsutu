@@ -34,7 +34,11 @@ const config = {
         darkTeal: "#4DB6AC",
         darkerTeal: "#26A69A",
         darkestTeal: "#009688",
-        headerColor: "#8F8F8F"
+        headerColor: "#8F8F8F",
+        oliveGreen: "#5c5830",
+        redOrange: "#ee7840",
+        champagne: "#f0dac0",
+        coral: "#f6a970"
       },
       keyframes: {
         "accordion-down": {
