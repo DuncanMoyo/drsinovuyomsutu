@@ -6,13 +6,13 @@ const Approach = () => {
   return (
     <div
       id="three"
-      className="bg-lightestTeal h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col rounded-2xl pt-16"
+      className="bg-lightChampagne h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col rounded-2xl pt-16"
     >
-      <div className="border-solid mx-20 mb-5 md:mx-96 border-darkerTeal mt-10 border-2 rounded-lg text-center">
+      <div className="border-solid mx-20 mb-5 md:mx-96 border-cedarChest mt-10 border-2 rounded-lg text-center">
         <h1 className="text-base m-2 uppercase md:text-5xl">Consultations</h1>
       </div>
       <div className="flex flex-col md:flex-row w-full h-screen">
-        <div className="flex flex-1 bg-lightTeal justify-center text-white text-5xl m-2 text-center items-center">
+        <div className="flex flex-1 bg-desertSun justify-center text-white text-5xl m-2 text-center items-center">
         <Image
           src="/assets/images/consultation.jpg"
           alt="profile"
@@ -20,7 +20,7 @@ const Approach = () => {
           height={700}
         />
         </div>
-        <div className="flex flex-1 m-2 p-2 md:m-20 bg-lighterTeal flex-col">
+        <div className="flex flex-1 m-2 p-2 md:m-20 bg-peach flex-col">
           <h1 className="uppercase text-3xl text-center">
             Approach
           </h1>

@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full z-50 border-b bg-oliveGreen md:fixed ${
+      className={`w-full z-50 border-b bg-cedarChest md:fixed ${
         navVisible ? "visible" : "hidden"
       }`}
       style={{
@@ -42,7 +42,7 @@ const Header = () => {
       <div className="max-w-7xl lg:mx-auto p-2 md:px-10 xl:px-0 w-full items-center justify-between md:justify-around hidden md:flex">
         <AnchorLink href="#home">
           <Image
-            src="/assets/images/logo_white.png"
+            src="/assets/images/logo_black.png"
             alt="logo_white"
             width={50}
             height={50}
@@ -53,7 +53,7 @@ const Header = () => {
           <ol className="flex items-center justify-between p-0 m-0">
             {navLinks.map(({ name, url }, index) => (
               <AnchorLink
-                className="text-white hover:text-green mx-16 uppercase"
+                className="hover:text-green mx-16 uppercase"
                 key={index}
                 href={url}
               >
@@ -66,7 +66,7 @@ const Header = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-darkestTeal overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-cedarChest overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
       >

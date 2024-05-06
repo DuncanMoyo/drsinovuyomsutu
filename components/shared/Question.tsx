@@ -5,7 +5,7 @@ const Question = () => {
     <div
       className="h-full w-screen mx-auto max-w-7xl px-2 md:px-0 pt-40 md:pt-30 flex flex-col md:flex-row"
     >
-      <div className="h-full flex-1 rounded-2xl bg-lighterTeal flex-col">
+      <div className="h-full flex-1 rounded-2xl bg-peach flex-col">
         <h1 className="uppercase text-3xl p-2 text-center">
           What is a psychiatrist?
         </h1>

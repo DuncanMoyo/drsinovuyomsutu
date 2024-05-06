@@ -74,9 +74,9 @@ const ContactMe = ({ message }: Props) => {
   return (
     <div
       id="four"
-      className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightestTeal"
+      className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightChampagne"
     >
-      <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-lighterTeal">
+      <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-peach">
         <div className="flex flex-col md:pb-10 p-5">
           <a className="font-light" href="tel:0710093161">
             Call: 071 009 3161

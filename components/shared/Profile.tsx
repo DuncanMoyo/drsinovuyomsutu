@@ -6,9 +6,9 @@ const Profile = () => {
   return (
     <div
       id="one"
-      className="bg-lightestTeal h-full w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl pt-16"
+      className="bg-lightChampagne h-full w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl pt-16"
     >
-      <div className="h-full flex-1 m-2 md:m-16 bg-lighterTeal flex-col order-2 md:order-1">
+      <div className="h-full flex-1 m-2 md:m-16 bg-peach flex-col order-2 md:order-1">
         <h1 className="uppercase text-3xl text-center">About Dr Msutu</h1>
         <p className="p-2 md:p-3 font-light">
           We live in a world where mental illness is pervasive yet seldom
@@ -35,7 +35,7 @@ const Profile = () => {
           or exploring different cuisines that blow away my tastebuds.
         </p>
       </div>
-      <div className="flex flex-1 bg-lightTeal justify-center text-white text-6xl m-2 text-center items-center order-1 md:order-2">
+      <div className="flex flex-1 bg-desertSun justify-center text-white text-6xl m-2 text-center items-center order-1 md:order-2">
         <Image
           src="/assets/images/sinovuyo_grad.jpeg"
           alt="profile"
