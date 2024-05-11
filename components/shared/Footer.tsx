@@ -17,13 +17,13 @@ const Footer = () => {
       </div> */}
       <div className="flex flex-col items-center m-2">
         <Image
-          src="/assets/images/logo_black.png"
+          src="/assets/images/logo_white.png"
           alt="black_logo"
           width={60}
           height={60}
         />
         {/* <p className="uppercase mt-2 text-xl md:text-xl">dr. sinovuyo msutu</p> */}
-        <p className="font-light">©All rights reserved 2024.</p>
+        <p className="text-white">©All rights reserved 2024.</p>
       </div>
       {/* <div className="hidden md:flex flex-col">
         <div className="flex">

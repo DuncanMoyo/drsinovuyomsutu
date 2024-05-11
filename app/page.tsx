@@ -2,7 +2,7 @@ import { Approach, ContactMe, Profile, Question, Services } from "@/components/s
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between overflow-hidden">
       <Profile />
       <Question />
       <Services />

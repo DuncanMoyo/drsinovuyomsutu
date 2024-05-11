@@ -18,7 +18,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import Icon from "../ui/Icon";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Props = {
   message: {
@@ -73,40 +73,71 @@ const ContactMe = ({ message }: Props) => {
 
   return (
     <div
-      id="four"
+      id="contact"
       className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightChampagne"
     >
-      <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-peach">
+      <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-cedarChest">
         <div className="flex flex-col md:pb-10 p-5">
-          <a className="font-light" href="tel:0710093161">
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255, 255, 255)",
+              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+            }}
+            className=" border-2 text-center text-darkBrown"
+            href="tel:0710093161"
+          >
             Call: 071 009 3161
-          </a>
-          <a href="mailto:drmsutupsych@gmail.com" className="font-light mt-1">
+          </motion.a>
+          <motion.a
+            href="mailto:drmsutupsych@gmail.com"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255, 255, 255)",
+              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+            }}
+            className=" mt-1 border-2 text-center text-darkBrown"
+          >
             Email: drmsutupsych@gmail.com
-          </a>
+          </motion.a>
         </div>
-        <div className="md:pb-10 p-5">
-          <p className="font-light">Claro Clinic</p>
-          <p className="font-light">Syfred Douglas Street </p>
-          <p className="font-light">N1 City </p>
-          <p className="font-light">Cape Town </p>
-          <p className="font-light">7463 </p>
-        </div>
+        <motion.a
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 8px rgb(255, 255, 255)",
+            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+          }}
+          href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-5 mx-5 border-2"
+        >
+          <p className="text-darkBrown">Claro Clinic</p>
+          <p className="text-darkBrown">Syfred Douglas Street </p>
+          <p className="text-darkBrown">N1 City </p>
+          <p className="text-darkBrown">Cape Town </p>
+          <p className="text-darkBrown">7463 </p>
+        </motion.a>
 
-        <div className="md:pb-10 p-5">
+        {/* <div className="md:pb-10 p-5">
           <p className="">Working Hours possibly here</p>
-        </div>
+        </div> */}
 
         <div className="md:pb-10 p-5">
-          <a
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255, 255, 255)",
+              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+            }}
             href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-fit items-center cursor-pointer"
+            className="flex w-full items-center justify-center cursor-pointer border-2"
           >
-            <p className="mr-3">Proceed to map</p>
+            <p className="mr-3 text-2xl text-darkBrown">Proceed to map</p>
             <Icon name="location" />
-          </a>
+          </motion.a>
         </div>
       </div>
       <div className="flex flex-col mx-auto items-center md:h-full justify-center  mt-5">
@@ -173,15 +204,23 @@ const ContactMe = ({ message }: Props) => {
                   </FormItem>
                 )}
               />
-              <Button
-                className="w-full mt-4 h-[60px]"
-                type="submit"
-                variant={"default"}
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                }}
               >
-                <p className="uppercase text-lighNavy">
-                  {loading ? <Loader2 /> : "send message"}
-                </p>
-              </Button>
+                <Button
+                  className="w-full h-[60px]"
+                  type="submit"
+                  variant={"default"}
+                >
+                  <p className="uppercase">
+                    {loading ? <Loader2 /> : "send message"}
+                  </p>
+                </Button>
+              </motion.div>
             </form>
           </Form>
         </div>

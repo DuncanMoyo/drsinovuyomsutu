@@ -41,7 +41,8 @@ const config = {
         darkCoral: "#FCC9C2",
         darkestCoral: "#FBB7BC",
         cedarChest: "#c6594a", 
-        burntUmber: "#81271b"
+        burntUmber: "#81271b",
+        darkBrown: "#333333"
       },
       keyframes: {
         "accordion-down": {

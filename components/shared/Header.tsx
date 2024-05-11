@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { navLinks } from "@/lib/constants";
 import Image from "next/image";
 import Icon from "../ui/Icon";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -31,18 +32,16 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full z-50 border-b bg-cedarChest md:fixed ${
-        navVisible ? "visible" : "hidden"
-      }`}
+      className={`w-full z-50 border-b bg-cedarChest md:fixed`}
       style={{
-        transition: "opacity 0.3s ease",
-        opacity: navVisible ? 1 : 0,
+        transition: "transform 0.3s ease",
+        transform: navVisible ? "translateY(0)" : "translateY(-100%)",
       }}
     >
       <div className="max-w-7xl lg:mx-auto p-2 md:px-10 xl:px-0 w-full items-center justify-between md:justify-around hidden md:flex">
-        <AnchorLink href="#home">
+        <AnchorLink href="profile">
           <Image
-            src="/assets/images/logo_black.png"
+            src="/assets/images/logo_white.png"
             alt="logo_white"
             width={50}
             height={50}
@@ -52,12 +51,16 @@ const Header = () => {
         <div className="hidden md:justify-center md:flex">
           <ol className="flex items-center justify-between p-0 m-0">
             {navLinks.map(({ name, url }, index) => (
-              <AnchorLink
-                className="hover:text-green mx-16 uppercase"
-                key={index}
-                href={url}
-              >
-                <li>{name}</li>
+              <AnchorLink className="mx-16 uppercase" key={index} href={url}>
+                <motion.li
+                  whileHover={{
+                    scale: 1.2,
+                    textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  }}
+                  className="text-white"
+                >
+                  {name}
+                </motion.li>
               </AnchorLink>
             ))}
           </ol>
@@ -72,7 +75,7 @@ const Header = () => {
       >
         <AnchorLink href="#home">
           <Image
-            src="/assets/images/logo_black.png"
+            src="/assets/images/logo_white.png"
             alt="logo_black"
             width={35}
             height={35}
@@ -82,10 +85,11 @@ const Header = () => {
         <Icon
           name={toggle ? "close" : "menu"}
           onClick={() => setToggle(!toggle)}
+          color="white"
         />
       </div>
       {toggle && (
-        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-darkestTeal shadow-md border-b h-screen  border-gray flex-col transition-all ease-out duration-500">
+        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-cedarChest shadow-md border-b h-screen border-gray flex-col transition-all ease-out duration-500">
           {navLinks.map(({ name, url }, index) => (
             <AnchorLink
               onClick={() => setToggle(false)}
@@ -93,7 +97,7 @@ const Header = () => {
               key={index}
               href={url}
             >
-              <span className="uppercase">{name}</span>
+              <p className="uppercase text-white">{name}</p>
             </AnchorLink>
           ))}
         </div>
