@@ -84,7 +84,7 @@ const ContactMe = ({ message }: Props) => {
               textShadow: "0px 0px 8px rgb(255, 255, 255)",
               boxShadow: "0px 0px 8px rgb(255, 255, 255)",
             }}
-            className=" border-2 text-center text-darkBrown"
+            className=" border text-center text-darkBrown"
             href="tel:0710093161"
           >
             Call: 071 009 3161
@@ -96,7 +96,7 @@ const ContactMe = ({ message }: Props) => {
               textShadow: "0px 0px 8px rgb(255, 255, 255)",
               boxShadow: "0px 0px 8px rgb(255, 255, 255)",
             }}
-            className=" mt-1 border-2 text-center text-darkBrown"
+            className=" mt-1 border text-center text-darkBrown"
           >
             Email: drmsutupsych@gmail.com
           </motion.a>
@@ -110,7 +110,7 @@ const ContactMe = ({ message }: Props) => {
           href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-5 mx-5 border-2"
+          className="p-5 mx-5 border"
         >
           <p className="text-darkBrown">Claro Clinic</p>
           <p className="text-darkBrown">Syfred Douglas Street </p>
@@ -133,7 +133,7 @@ const ContactMe = ({ message }: Props) => {
             href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center cursor-pointer border-2"
+            className="flex w-full items-center justify-center cursor-pointer border"
           >
             <p className="mr-3 text-2xl text-darkBrown">Proceed to map</p>
             <Icon name="location" />

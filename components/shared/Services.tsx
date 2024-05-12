@@ -9,10 +9,10 @@ type ServiceCardProps = {
   condition: string;
 };
 
-const ServiceCard = ({ index, condition }: ServiceCardProps) => {
+const ServiceCard = ({ condition }: ServiceCardProps) => {
   return (
-    <Tilt className="xs:w-[250px] w-full h-full bg-darkCoral rounded-full cursor-pointer mx-auto">
-      <motion.div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+    <Tilt className="xs:w-[250px] w-full h-full bg-desertSun rounded-full cursor-pointer mx-auto">
+      <motion.div className="w-full p-[1px] rounded-[20px]">
         <div
           // @ts-ignore
           options={{
