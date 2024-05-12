@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-10 md:mb-20 pt-16 rounded-2xl"
+      className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-10 md:mb-20 pt-16 mb-5 rounded-2xl bg-lightChampagne"
     >
       <motion.div
         initial={{ x: "-50vw" }}
