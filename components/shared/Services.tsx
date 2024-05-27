@@ -11,7 +11,7 @@ type ServiceCardProps = {
 
 const ServiceCard = ({ condition }: ServiceCardProps) => {
   return (
-    <Tilt className="xs:w-[250px] w-full h-full bg-desertSun rounded-full cursor-pointer mx-auto">
+    <Tilt className="xs:w-[250px] w-full h-full bg-darkTeal rounded-full cursor-pointer mx-auto">
       <motion.div className="w-full p-[1px] rounded-[20px]">
         <div
           // @ts-ignore
@@ -33,13 +33,13 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-10 md:mb-20 pt-16 mb-5 rounded-2xl bg-lightChampagne"
+      className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-10 md:mb-20 pt-16 mb-5 rounded-2xl bg-lightestTeal"
     >
       <motion.div
         initial={{ x: "-50vw" }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
-        className="border-solid border-cedarChest mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
+        className="border-solid border-darkerTeal mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
       >
         <h1 className="text-base m-2 md:text-5xl uppercase text-darkBrown">Services</h1>
       </motion.div>
