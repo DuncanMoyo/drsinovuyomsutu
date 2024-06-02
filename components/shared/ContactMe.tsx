@@ -84,7 +84,7 @@ const ContactMe = ({ message }: Props) => {
               textShadow: "0px 0px 8px rgb(255, 255, 255)",
               boxShadow: "0px 0px 8px rgb(255, 255, 255)",
             }}
-            className=" border text-center text-darkBrown"
+            className=" border text-center text-white bg-darkTeal"
             href="tel:0710093161"
           >
             Call: 071 009 3161
@@ -96,7 +96,7 @@ const ContactMe = ({ message }: Props) => {
               textShadow: "0px 0px 8px rgb(255, 255, 255)",
               boxShadow: "0px 0px 8px rgb(255, 255, 255)",
             }}
-            className=" mt-1 border text-center text-darkBrown"
+            className=" mt-1 border text-center text-white bg-darkTeal"
           >
             Email: drmsutupsych@gmail.com
           </motion.a>
@@ -110,13 +110,13 @@ const ContactMe = ({ message }: Props) => {
           href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-5 mx-5 border"
+          className="p-5 mx-5 bg-darkTeal border"
         >
-          <p className="text-darkBrown">Claro Clinic</p>
-          <p className="text-darkBrown">Syfred Douglas Street </p>
-          <p className="text-darkBrown">N1 City </p>
-          <p className="text-darkBrown">Cape Town </p>
-          <p className="text-darkBrown">7463 </p>
+          <p className="text-white">Claro Clinic</p>
+          <p className="text-white">Syfred Douglas Street </p>
+          <p className="text-white">N1 City </p>
+          <p className="text-white">Cape Town </p>
+          <p className="text-white">7463 </p>
         </motion.a>
 
         {/* <div className="md:pb-10 p-5">
@@ -133,14 +133,17 @@ const ContactMe = ({ message }: Props) => {
             href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center cursor-pointer border"
+            className="flex w-full items-center justify-center cursor-pointer border bg-darkTeal"
           >
-            <p className="mr-3 text-2xl text-darkBrown">Proceed to map</p>
-            <Icon name="location" />
+            <p className="mr-3 text-2xl text-white">Proceed to map</p>
+            <Icon name="location" color="white"/>
           </motion.a>
         </div>
       </div>
-      <div className="flex flex-col mx-auto items-center md:h-full justify-center  mt-5">
+      <div className="flex flex-col mx-auto items-center md:h-full justify-center mt-5">
+        <h1 className="pb-10 text-darkBrown text-2xl text-center">
+          Fill out our quick contact form for more information on our fees.
+        </h1>
         <div className="pb-5">
           <Form {...form}>
             <form

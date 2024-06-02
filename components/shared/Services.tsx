@@ -22,7 +22,9 @@ const ServiceCard = ({ condition }: ServiceCardProps) => {
           }}
           className="rounded-[20px] py-5 px-12 min-h-[80px] md:min-h-[120px] flex justify-evenly items-center flex-col"
         >
-          <h3 className="text-[20px] font-bold text-center text-darkBrown">{condition}</h3>
+          <h3 className="text-[20px] font-bold text-center text-white">
+            {condition}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -32,26 +34,39 @@ const ServiceCard = ({ condition }: ServiceCardProps) => {
 const Services = () => {
   return (
     <div
-      id="services"
-      className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center mt-10 md:mb-20 pt-16 mb-5 rounded-2xl bg-lightestTeal"
+      className="w-full h-full"
+      style={{
+        backgroundImage: 'url("/assets/images/services.jpg")',
+        backgroundSize: "auto",
+        backgroundPosition: "center",
+      }}
     >
-      <motion.div
-        initial={{ x: "-50vw" }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 1 }}
-        className="border-solid border-darkerTeal mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
-      >
-        <h1 className="text-base m-2 md:text-5xl uppercase text-darkBrown">Services</h1>
-      </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2 md:gap-8 w-full px-10 mt-10 md:mt-20">
-        {servicesData.map(({ condition }, index) => (
-          <ServiceCard
-            key={index}
-            // @ts-ignore
-            index={index.toString()}
-            condition={condition}
-          />
-        ))}
+      <div className="w-full h-full md:h-screen bg-black/40">
+        <div
+          id="services"
+          className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center md:mb-20 mb-5"
+        >
+          <motion.div
+            initial={{ x: "-50vw" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className="border-solid border-white mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
+          >
+            <h1 className="text-base m-2 md:text-5xl uppercase text-white">
+              Services
+            </h1>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2 md:gap-8 w-full px-10 mt-10 md:mt-20">
+            {servicesData.map(({ condition }, index) => (
+              <ServiceCard
+                key={index}
+                // @ts-ignore
+                index={index.toString()}
+                condition={condition}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
