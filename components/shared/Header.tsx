@@ -6,11 +6,13 @@ import { navLinks } from "@/lib/constants";
 import Image from "next/image";
 import Icon from "../ui/Icon";
 import { motion } from "framer-motion";
+import useScrollDirection from "../hooks/useScrollDirection";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [navVisible, setNavVisible] = useState(true);
+  const scrollDir = useScrollDirection();
 
   useEffect(() => {
     function handleScroll() {
@@ -35,7 +37,8 @@ const Header = () => {
       className={`w-full z-50 bg-black md:fixed`}
       style={{
         transition: "transform 0.3s ease",
-        transform: navVisible ? "translateY(0)" : "translateY(-100%)",
+        // transform: navVisible ? "translateY(0)" : "translateY(-100%)",
+        transform: scrollDir === "up" ? "translateY(0)" : "translateY(-100%)",
       }}
     >
       <div className="max-w-7xl lg:mx-auto p-2 md:px-10 xl:px-0 w-full items-center justify-between md:justify-around hidden md:flex">
@@ -72,6 +75,11 @@ const Header = () => {
         className={`fixed flex bg-black overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
+        style={{
+          transition: "transform 0.3s ease",
+          // transform: navVisible ? "translateY(0)" : "translateY(-100%)",
+          transform: scrollDir === "up" ? "translateY(0)" : "translateY(-100%)",
+        }}
       >
         <AnchorLink href="#home">
           <Image
