@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Question = () => {
   return (
-    <div className="bg-lightestTeal w-full h-full">
+    <div className="bg-background w-full h-full">
       <div className="h-full w-screen mx-auto max-w-7xl px-2 md:px-0 py-10 md:py-30 flex flex-col md:flex-row">
-      <div className="h-full flex-1 rounded-2xl bg-lighterTeal flex-col">
+      <div className="h-full flex-1 rounded-2xl bg-white flex-col border border-black">
         <motion.h1
           initial={{ fontSize: "0px" }}
           whileInView={{ fontSize: "30px" }}

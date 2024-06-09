@@ -73,57 +73,58 @@ const ContactMe = ({ message }: Props) => {
 
   return (
     <div
-      id="contact"
-      className="h-full md:h-screen justify-center mx-auto md:mt-20 w-screen max-w-5xl flex flex-col md:flex-row items-center rounded-2xl mt-5 pt-8 md:pt-0 bg-lightestTeal"
+      className="w-full h-full bg-white"
+      style={{
+        backgroundImage: 'url("/assets/images/contactme.jpg")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center rounded-2xl md:bg-lighterTeal">
-        <div className="flex flex-col md:pb-10 p-5">
-          <motion.a
-            whileHover={{
-              scale: 1.1,
-              textShadow: "0px 0px 8px rgb(255, 255, 255)",
-              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-            }}
-            className=" border text-center text-white bg-darkTeal"
-            href="tel:0710093161"
-          >
-            Call: 071 009 3161
-          </motion.a>
-          <motion.a
-            href="mailto:drmsutupsych@gmail.com"
-            whileHover={{
-              scale: 1.1,
-              textShadow: "0px 0px 8px rgb(255, 255, 255)",
-              boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-            }}
-            className=" mt-1 border text-center text-white bg-darkTeal"
-          >
-            Email: drmsutupsych@gmail.com
-          </motion.a>
-        </div>
-        <motion.a
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 8px rgb(255, 255, 255)",
-            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-          }}
-          href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-5 mx-5 bg-darkTeal border"
-        >
-          <p className="text-white">Claro Clinic</p>
-          <p className="text-white">Syfred Douglas Street </p>
-          <p className="text-white">N1 City </p>
-          <p className="text-white">Cape Town </p>
-          <p className="text-white">7463 </p>
-        </motion.a>
-
-        {/* <div className="md:pb-10 p-5">
-          <p className="">Working Hours possibly here</p>
-        </div> */}
-
-        <div className="md:pb-10 p-5">
+      <div
+        id="contact"
+        className="h-full md:h-screen justify-center mx-auto md:my-20 w-screen max-w-5xl flex flex-col md:flex-row items-center mt-5 pt-8 md:pt-0 bg-black/40 md:rounded-2xl"
+      >
+        <div className="flex px-2 md:px-0 flex-col w-80 md:h-full justify-center md:bg-black/20 md:rounded-2xl">
+          <div className="flex flex-col md:pb-10 p-5">
+            {/* <motion.p
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+              }}
+              className=" border text-center p-1 border-black bg-white"
+            >
+              To schedule an appointment for assessment or treatment, please
+              contact Claro Clinic during our office hours. We are available
+              Monday to Thursday from 08:00 to 16:00, and Fridays from 08:00 to
+              12:00. We kindly ask that any cancellations be made at least 24
+              hours in advance. In the event of a no-show or failure to cancel,
+              the patient will be responsible for the full payment, except in
+              cases of emergency.
+            </motion.p> */}
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+              }}
+              className=" border text-center border-black bg-white mt-10 text-darkBrown"
+              href="tel:0710093161"
+            >
+              Call: 071 009 3161
+            </motion.a>
+            <motion.a
+              href="mailto:drmsutupsych@gmail.com"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+              }}
+              className=" mt-1 border border-black text-center bg-white text-darkBrown"
+            >
+              Email: drmsutupsych@gmail.com
+            </motion.a>
+          </div>
           <motion.a
             whileHover={{
               scale: 1.1,
@@ -133,99 +134,119 @@ const ContactMe = ({ message }: Props) => {
             href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center cursor-pointer border bg-darkTeal"
+            className="p-5 mx-5 bg-white border border-black"
           >
-            <p className="mr-3 text-2xl text-white">Proceed to map</p>
-            <Icon name="location" color="white"/>
+            <p className="text-darkBrown">Claro Clinic</p>
+            <p className="text-darkBrown">Syfred Douglas Street </p>
+            <p className="text-darkBrown">N1 City </p>
+            <p className="text-darkBrown">Cape Town </p>
+            <p className="text-darkBrown">7463 </p>
           </motion.a>
-        </div>
-      </div>
-      <div className="flex flex-col mx-auto items-center md:h-full justify-center mt-5">
-        <h1 className="pb-10 text-darkBrown text-2xl text-center">
-          Fill out our quick contact form for more information on our fees.
-        </h1>
-        <div className="pb-5">
-          <Form {...form}>
-            <form
-              className="w-[300px] md:w-[500px]"
-              onSubmit={form.handleSubmit(onSubmit)}
+
+          <div className="md:pb-10 p-5">
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+              }}
+              href="https://maps.app.goo.gl/Cp3WwSUiyMjdM2ef9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center cursor-pointer border border-black bg-white"
             >
-              <div className="flex-col md:flex md:flex-row">
-                <FormField
-                  control={form.control}
-                  name="firstName"
-                  render={({ field }) => (
-                    <FormItem className="w-full px-2 my-3">
-                      <FormControl>
-                        <Input placeholder="First Name" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="lastName"
-                  render={({ field }) => (
-                    <FormItem className="w-full px-2 my-3">
-                      <FormControl>
-                        <Input placeholder="Last Name" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="flex-col md:flex md:flex-row">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem className="w-full px-2 my-3">
-                      <FormControl>
-                        <Input placeholder="Email" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem className="w-full px-2 my-3">
-                    <FormControl>
-                      <Textarea
-                        placeholder="Message"
-                        className="text-slate"
-                        rows={4}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <motion.div
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0px 0px 8px rgb(255, 255, 255)",
-                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-                }}
+              <p className="mr-3 text-2xl text-darkBrown">Proceed to map</p>
+              <Icon name="location" color="darkBrown" />
+            </motion.a>
+          </div>
+        </div>
+        <div className="flex flex-col mx-auto items-center md:h-full justify-center mt-5">
+          <h1 className="py-5 text-darkBrown md:text-2xl text-center">
+            Fill out the contact form for more information on our fees.
+          </h1>
+          <div className="pb-5">
+            <Form {...form}>
+              <form
+                className="w-[300px] md:w-[500px]"
+                onSubmit={form.handleSubmit(onSubmit)}
               >
-                <Button
-                  className="w-full h-[60px]"
-                  type="submit"
-                  variant={"default"}
+                <div className="flex-col md:flex md:flex-row">
+                  <FormField
+                    control={form.control}
+                    name="firstName"
+                    render={({ field }) => (
+                      <FormItem className="w-full px-2 my-3">
+                        <FormControl>
+                          <Input placeholder="First Name" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="lastName"
+                    render={({ field }) => (
+                      <FormItem className="w-full px-2 my-3">
+                        <FormControl>
+                          <Input placeholder="Last Name" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="flex-col md:flex md:flex-row">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem className="w-full px-2 my-3">
+                        <FormControl>
+                          <Input placeholder="Email" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem className="w-full px-2 my-3">
+                      <FormControl>
+                        <Textarea
+                          placeholder="Message"
+                          className="text-slate"
+                          rows={4}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                    boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  }}
                 >
-                  <p className="uppercase">
-                    {loading ? <Loader2 /> : "send message"}
-                  </p>
-                </Button>
-              </motion.div>
-            </form>
-          </Form>
+                  <Button
+                    className="w-full h-[60px]"
+                    type="submit"
+                    variant={"default"}
+                  >
+                    <p className="uppercase">
+                      {loading ? <Loader2 /> : "send message"}
+                    </p>
+                  </Button>
+                </motion.div>
+              </form>
+            </Form>
+          </div>
         </div>
       </div>
     </div>

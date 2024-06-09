@@ -5,9 +5,10 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <div
+    <div className="w-full h-full bg-background">
+        <div
       id="consultations"
-      className="bg-lightestTeal h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col rounded-2xl pt-16"
+      className="bg-background h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col rounded-2xl pt-16"
     >
       {/* <motion.div
         initial={{ x: "50vw" }}
@@ -23,16 +24,16 @@ const Approach = () => {
           animate={{ opacity: 1 }}
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 5 }}
-          className="flex flex-1 bg-lightTeal justify-center text-white text-5xl m-2 text-center items-center"
+          className="flex flex-2 justify-center text-white text-5xl m-2 text-center items-center"
         >
           <Image
-            src="/assets/images/consultation.jpg"
+            src="/assets/images/approach.jpg"
             alt="profile"
-            width={440}
-            height={700}
+            width={700}
+            height={500}
           />
         </motion.div>
-        <div className="flex flex-1 m-2 p-2 md:m-20 bg-lighterTeal flex-col">
+        <div className="flex flex-1 m-2 p-2 md:m-20 bg-white border border-black flex-col">
           <motion.h1
             initial={{ fontSize: "8px" }}
             animate={{ fontSize: "30px" }}
@@ -60,6 +61,8 @@ const Approach = () => {
         </div>
       </div>
     </div>
+    </div>
+  
   );
 };
 

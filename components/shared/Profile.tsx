@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <div className="bg-lightestTeal w-full h-full">
+    <div className="w-full h-full bg-background">
       <div
         id="profile"
-        className="bg-lightestTeal h-full w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl pt-16"
+        className="h-full w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl pt-16"
       >
-        <div className="h-full flex-1 m-2 md:m-16 bg-lighterTeal flex-col order-2 md:order-1">
+        <div className="h-full flex-1 m-2 md:m-16 flex-col order-2 md:order-1 bg-white border border-black">
           <motion.h1
             initial={{ fontSize: "0px" }}
             animate={{ fontSize: "30px" }}
@@ -51,7 +51,7 @@ const Profile = () => {
           className="flex flex-1 justify-center text-white text-6xl m-2 text-center items-center order-1 md:order-2"
         >
           <Image
-            src="/assets/images/sinovuyo_grad.jpeg"
+            src="/assets/images/sino_whit.png"
             alt="profile"
             width={440}
             height={700}

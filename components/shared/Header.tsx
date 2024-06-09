@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full z-50 border-b bg-darkestTeal md:fixed`}
+      className={`w-full z-50 bg-black md:fixed`}
       style={{
         transition: "transform 0.3s ease",
         transform: navVisible ? "translateY(0)" : "translateY(-100%)",
@@ -69,14 +69,14 @@ const Header = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-darkestTeal overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-black overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
       >
         <AnchorLink href="#home">
           <Image
             src="/assets/images/logo_white.png"
-            alt="logo_black"
+            alt="logo_white"
             width={35}
             height={35}
           />
@@ -89,7 +89,7 @@ const Header = () => {
         />
       </div>
       {toggle && (
-        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-darkestTeal shadow-md border-b h-screen border-gray flex-col transition-all ease-out duration-500">
+        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-black shadow-md border-b h-screen border-gray flex-col transition-all ease-out duration-500">
           {navLinks.map(({ name, url }, index) => (
             <AnchorLink
               onClick={() => setToggle(false)}

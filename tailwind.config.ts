@@ -44,6 +44,7 @@ const config = {
         burntUmber: "#81271b",
         darkBrown: "#333333",
         paleRose: "#f9f5f4",
+        background: "#f7f8f8"
       },
       keyframes: {
         "accordion-down": {

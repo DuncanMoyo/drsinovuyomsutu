@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Footer = () => {
   return (
-    <div className="bg-darkestTeal w-full md:px-40 mt-20 mb:mt-5 mx-auto flex flex-col md:flex-row md:justify-around items-center pt-2 justify-center">
+    <div className="bg-black w-full md:px-40 mb:mt-5 mx-auto flex flex-col md:flex-row md:justify-around items-center pt-2 justify-center">
       {/* <div className="flex flex-col">
         <div className="flex">
           <p className="mr-3">Call:</p>

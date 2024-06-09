@@ -5,7 +5,7 @@
 html {
   scrollbar-width: thin;
   /* scrollbar-color: #81271b #F2D6C0; */
-  scrollbar-color: #4db6ac #e0f2f1;
+  scrollbar-color: #000000 #cccccc;
 }
 
 html::-webkit-scrollbar {
@@ -14,13 +14,13 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
   /* background: #F2D6C0;  */
-  background: #F2D6C0; 
+  background: #f2d6c0;
 }
 
 html::-webkit-scrollbar-thumb {
   /* background-color: #FDDBD8;  */
-  background-color: #4db6ac; 
+  background-color: #000000;
   border-radius: 20px;
   /* border: 3px solid #F2D6C0;  */
-  border: 3px solid #e0f2f1; 
+  border: 3px solid #e0f2f1;
 }

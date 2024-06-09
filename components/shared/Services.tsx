@@ -11,7 +11,7 @@ type ServiceCardProps = {
 
 const ServiceCard = ({ condition }: ServiceCardProps) => {
   return (
-    <Tilt className="xs:w-[250px] w-full h-full bg-darkTeal rounded-full cursor-pointer mx-auto">
+    <Tilt className="xs:w-[250px] w-full h-full bg-background rounded-full cursor-pointer mx-auto border border-black">
       <motion.div className="w-full p-[1px] rounded-[20px]">
         <div
           // @ts-ignore
@@ -22,7 +22,7 @@ const ServiceCard = ({ condition }: ServiceCardProps) => {
           }}
           className="rounded-[20px] py-5 px-12 min-h-[80px] md:min-h-[120px] flex justify-evenly items-center flex-col"
         >
-          <h3 className="text-[20px] font-bold text-center text-white">
+          <h3 className="text-[20px] font-bold text-center text-darkBrown">
             {condition}
           </h3>
         </div>
@@ -35,13 +35,13 @@ const Services = () => {
   return (
     <div
       className="w-full h-full"
-      style={{
-        backgroundImage: 'url("/assets/images/services.jpg")',
-        backgroundSize: "auto",
-        backgroundPosition: "center",
-      }}
+      // style={{
+      //   backgroundImage: 'url("/assets/images/services.jpg")',
+      //   backgroundSize: "auto",
+      //   backgroundPosition: "center",
+      // }}
     >
-      <div className="w-full h-full md:h-screen bg-black/40">
+      <div className="w-full h-full md:h-screen bg-white">
         <div
           id="services"
           className="h-full md:h-screen w-screen mx-auto max-w-7xl flex flex-col items-center md:mb-20 mb-5"
@@ -50,9 +50,9 @@ const Services = () => {
             initial={{ x: "-50vw" }}
             whileInView={{ x: 0 }}
             transition={{ duration: 1 }}
-            className="border-solid border-white mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
+            className="border-solid border-black mt-10 px-10 md:mx-96 border-2 rounded-lg text-center"
           >
-            <h1 className="text-base m-2 md:text-5xl uppercase text-white">
+            <h1 className="text-base m-2 md:text-5xl uppercase text-darkBrown">
               Services
             </h1>
           </motion.div>

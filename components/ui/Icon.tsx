@@ -4,8 +4,9 @@ import { FC } from "react";
 import { IconContext } from "react-icons";
 import { MdMenu, MdOutlineClose } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
+import { IoKeypad } from "react-icons/io5";
 
-export const iconNames = ["menu", "close", "location"] as const;
+export const iconNames = ["menu", "close", "location", "keypad"] as const;
 
 export type IconName = (typeof iconNames)[number];
 
@@ -32,6 +33,8 @@ const selectIcon = (
       return <MdOutlineClose />;
     case "location":
       return <FaLocationArrow />;
+    case "keypad":
+      return <IoKeypad />;
     default:
       return <></>;
   }
