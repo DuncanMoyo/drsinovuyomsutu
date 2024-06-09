@@ -161,7 +161,7 @@ const ContactMe = ({ message }: Props) => {
           </div>
         </div>
         <div className="flex flex-col mx-auto items-center md:h-full justify-center mt-5">
-          <h1 className="py-5 text-darkBrown md:text-2xl text-center">
+          <h1 className="py-5 text-white md:text-2xl text-center">
             Fill out the contact form for more information on our fees.
           </h1>
           <div className="pb-5">
