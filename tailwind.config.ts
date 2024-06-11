@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(90deg, rgba(232,221,7,1) 0%, rgba(123,179,94,1) 42%, rgba(38,75,81,1) 100%)",
+      },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
       },
@@ -40,11 +44,14 @@ const config = {
         coral: "#FDDBD8",
         darkCoral: "#FCC9C2",
         darkestCoral: "#FBB7BC",
-        cedarChest: "#c6594a", 
+        cedarChest: "#c6594a",
         burntUmber: "#81271b",
         darkBrown: "#333333",
         paleRose: "#f9f5f4",
-        background: "#f7f8f8"
+        background: "#f7f8f8",
+        deepSeaBlue: "#264b51",
+        emeraldMeadow: "#7bb35e",
+        lemonZest: "#e8dd07",
       },
       keyframes: {
         "accordion-down": {

@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full z-50 bg-black md:fixed`}
+      className={`w-full z-50 bg-deepSeaBlue md:fixed`}
       style={{
         transition: "transform 0.3s ease",
         // transform: navVisible ? "translateY(0)" : "translateY(-100%)",
