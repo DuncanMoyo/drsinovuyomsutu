@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full z-50 bg-deepSeaBlue md:fixed`}
+      className={`w-full z-50 bg-emeraldMeadow md:fixed`}
       style={{
         transition: "transform 0.3s ease",
         // transform: navVisible ? "translateY(0)" : "translateY(-100%)",
@@ -72,7 +72,7 @@ const Header = () => {
 
       {/* MOBILE VIEW */}
       <div
-        className={`fixed flex bg-black overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
+        className={`fixed flex bg-emeraldMeadow overflow-x-hidden z-50 shadow-md px-4 top-0 left-0 right-0 w-full justify-between py-3 items-center md:hidden ${
           toggle ? "transition-all ease-out duration-500" : ""
         }`}
         style={{
@@ -97,7 +97,7 @@ const Header = () => {
         />
       </div>
       {toggle && (
-        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-black shadow-md border-b h-screen border-gray flex-col transition-all ease-out duration-500">
+        <div className="flex fixed top-10 bottom-0 left-0 right-0 z-30 md:hidden pt-20 bg-emeraldMeadow shadow-md border-b h-screen border-gray flex-col transition-all ease-out duration-500">
           {navLinks.map(({ name, url }, index) => (
             <AnchorLink
               onClick={() => setToggle(false)}

@@ -33,7 +33,7 @@ const Approach = () => {
             height={500}
           />
         </motion.div>
-        <div className="flex flex-1 m-2 p-2 md:m-20 bg-white border border-black flex-col">
+        <div className="flex flex-1 m-2 p-2 md:m-20 bg-white border rounded-2xl border-black flex-col">
           <motion.h1
             initial={{ fontSize: "8px" }}
             animate={{ fontSize: "30px" }}

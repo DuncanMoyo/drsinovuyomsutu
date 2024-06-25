@@ -10,7 +10,7 @@ const Profile = () => {
         id="profile"
         className="h-full w-screen mx-auto max-w-7xl flex flex-col md:flex-row rounded-2xl pt-16"
       >
-        <div className="h-full flex-1 m-2 md:m-16 flex-col order-2 md:order-1 bg-white border border-black">
+        <div className="h-full flex-1 m-2 md:m-16 flex-col order-2 md:order-1 bg-white border border-black rounded-2xl">
           <motion.h1
             initial={{ fontSize: "0px" }}
             animate={{ fontSize: "30px" }}
